@@ -90,7 +90,7 @@ function display_help
   color_reset
 }
 
-# Set defaults
+# Varsayılan değişkenler
 eclipse_ws="workspace"
 catkin_ws="catkin_ws"
 clear_eclipse=false
@@ -131,7 +131,7 @@ if [ -d "`eval echo ${eclipse_ws//>}`" ]; then
     fi
 
     # .project dosyaları değiştiriliyor
-    echo -n -e "${COLOR_ITEM}Modify .project files${COLOR_RESET}..."
+    echo -n -e "${COLOR_ITEM}'.project' dosyaları değitiriliyor${COLOR_RESET}..."
     eval cd "$catkin_ws/build"
     # build içindeki her bohçayı bul
     for PROJECT in `find $PWD -name .project`; do
@@ -141,7 +141,7 @@ if [ -d "`eval echo ${eclipse_ws//>}`" ]; then
         awk -f $(rospack find mk)/eclipse.awk .project > .project_with_env && mv .project_with_env .project
         echo -n "."
     done
-    echo -e "Done"
+    echo -e "Oldu"
 
     # import all projects in headless mode
     echo -e "${COLOR_BOLD}Bir bohça 5 sn uzun sürerse, (ctrl+c) ile kapatın.${COLOR_RESET}\n"
