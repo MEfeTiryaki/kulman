@@ -12,5 +12,6 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>param_io</depend>
+  <depend>arac_msgs</depend>
 
 </package>

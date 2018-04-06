@@ -6,6 +6,7 @@ add_definitions("-std=c++11")
 find_package(catkin REQUIRED
   COMPONENTS
   param_io
+  arac_msgs
 )
 
 catkin_package(
@@ -13,6 +14,7 @@ catkin_package(
     include
   CATKIN_DEPENDS
     param_io
+    arac_msgs
 )
 
 #############

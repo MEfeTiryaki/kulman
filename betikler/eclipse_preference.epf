@@ -1,4 +1,4 @@
-#Wed Feb 07 16:12:35 CET 2018
+#Fri Apr 06 12:53:45 EET 2018
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=10
@@ -58,10 +58,17 @@
 /instance/org.eclipse.cdt.core.prj-anymal_simple_locomotion_actions-Release@anymal_simple_locomotion_actions/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-anymal_state_estimator-Release@anymal_state_estimator/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-anymal_state_estimator_lwf-Release@anymal_state_estimator_lwf/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac-Release@arac/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_controller-Release@arac_controller/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_controller_frame-Release@arac_controller_frame/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_description-Release@arac_description/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_gazebo-Release@arac_gazebo/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_joystick-Release@arac_joystick/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_model-Release@arac_model/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_msgs-Release@arac_msgs/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_rviz-Release@arac_rviz/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_sim-Release@arac_sim/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-arac_state_estimator-Release@arac_state_estimator/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-bageditor-Release@bageditor/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-battery_widget-Release@battery_widget/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-catkin_tools_prebuild-Release@catkin_tools_prebuild/indexer/preferenceScope=0
@@ -101,6 +108,7 @@
 /instance/org.eclipse.cdt.core.prj-kindr_msgs-Release@kindr_msgs/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-kindr_ros-Release@kindr_ros/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-kindr_rviz_plugins-Release@kindr_rviz_plugins/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-kulman_state_estimator-Release@kulman_state_estimator/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-lightweight_filtering-Release@lightweight_filtering/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-lightweight_filtering_models-Release@lightweight_filtering_models/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-loco-Release@loco/indexer/preferenceScope=0
@@ -444,9 +452,10 @@
 /instance/org.eclipse.cdt.ui/spelling_locale_initialized=true
 /instance/org.eclipse.cdt.ui/useAnnotationsPrefPage=true
 /instance/org.eclipse.cdt.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /instance/org.eclipse.core.resources/description.autobuilding=false
 /instance/org.eclipse.core.resources/version=1
-/instance/org.eclipse.core.runtime/content-types/org.eclipse.wst.xml.core.xmlsource/file-names=sim.launch,anymal_highlevel_controller.launch,anymal_ice_skate_parameter.urdf.xacro,anymal_ice_skate_macro.urdf.xacro,anymal.urdf.xacro,anymal_adapter_parameters.urdf.xacro,anymal_straight_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_parameter.urdf.xacro,rviz.launch,anymal_shank_parameters.urdf.xacro
+/instance/org.eclipse.core.runtime/content-types/org.eclipse.wst.xml.core.xmlsource/file-names=sim.launch,anymal_highlevel_controller.launch,anymal_ice_skate_parameter.urdf.xacro,anymal_ice_skate_macro.urdf.xacro,anymal.urdf.xacro,anymal_adapter_parameters.urdf.xacro,anymal_straight_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_parameter.urdf.xacro,rviz.launch,anymal_shank_parameters.urdf.xacro,arac_base.urdf.xacro,arac.urdf.xacro
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.applicationLaunchType=org.eclipse.cdt.dsf.gdb.launch.localCLaunch,debug,;org.eclipse.cdt.cdi.launch.localCLaunch,run,;
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.attachLaunchType=org.eclipse.cdt.dsf.gdb.launch.attachCLaunch,debug,;
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.postmortemLaunchType=org.eclipse.cdt.dsf.gdb.launch.coreCLaunch,debug,;
@@ -465,14 +474,18 @@
 /instance/org.eclipse.e4.ui.css.swt.theme/themeid=org.eclipse.e4.ui.css.theme.e4_dark
 /instance/org.eclipse.e4.ui.workbench.renderers.swt/enableMRU=true
 /instance/org.eclipse.e4.ui.workbench.renderers.swt/themeEnabled=true
+/instance/org.eclipse.epp.logging.aeri.ide/configured=true
 /instance/org.eclipse.epp.logging.aeri.ide/resetSendMode=KEEP
 /instance/org.eclipse.epp.logging.aeri.ide/resetSendModeOn=0
 /instance/org.eclipse.epp.logging.aeri.ide/sendMode=NOTIFY
+/instance/org.eclipse.epp.logging.aeri.ide/servers/org.eclipse.epp.logging.aeri.ide.server/configured=true
+/instance/org.eclipse.epp.mpc.ui/CatalogDescriptor=http\://marketplace.eclipse.org
 /instance/org.eclipse.mylyn.context.core/mylyn.attention.migrated=true
 /instance/org.eclipse.mylyn.monitor.ui/org.eclipse.mylyn.monitor.activity.tracking.enabled.checked=true
 /instance/org.eclipse.mylyn.tasks.ui/migrated.task.repositories.secure.store=true
 /instance/org.eclipse.mylyn.tasks.ui/org.eclipse.mylyn.tasks.ui.filters.nonmatching=true
 /instance/org.eclipse.mylyn.tasks.ui/org.eclipse.mylyn.tasks.ui.filters.nonmatching.encouraged=true
+/instance/org.eclipse.mylyn.tasks.ui/org.eclipse.mylyn.tasks.ui.welcome.message=true
 /instance/org.eclipse.oomph.workingsets/working.set.group=<?xml version\="1.0" encoding\="UTF-8"?>\n<workingsets\:WorkingSetGroup xmi\:version\="2.0" xmlns\:xmi\="http\://www.omg.org/XMI" xmlns\:workingsets\="http\://www.eclipse.org/oomph/workingsets/1.0"/>\n
 /instance/org.eclipse.rse.core/org.eclipse.rse.systemtype.local.systemType.defaultUserId=efe
 /instance/org.eclipse.rse.core/useridperkey=uSadetra.Local\=efe;
@@ -525,26 +538,32 @@
 /instance/org.eclipse.ui.editors/thcoverage_stylePreferences=NONE
 /instance/org.eclipse.ui.editors/thcoverage_text=false
 /instance/org.eclipse.ui.editors/writeOccurrenceIndicationColor=27,98,145
-/instance/org.eclipse.ui.ide/platformState=1508337278662
+/instance/org.eclipse.ui.ide/EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+/instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
+/instance/org.eclipse.ui.ide/TASKS_FILTERS_MIGRATE=true
+/instance/org.eclipse.ui.ide/platformState=1519431691288
 /instance/org.eclipse.ui.ide/quickStart=false
 /instance/org.eclipse.ui.ide/tipsAndTricks=true
 /instance/org.eclipse.ui.navigator/org.eclipse.ui.navigator.ProjectExplorer.activatedExtensions=org.eclipse.cdt.make.ui.makeTargets.content\=false;org.eclipse.cdt.ui.navigator.content\=true;org.eclipse.egit.ui.changeSetContent\=false;org.eclipse.egit.ui.RepositoriesViewContent\=false;org.eclipse.remote.ui.navigatorContent.connections\=false;org.eclipse.mylyn.commons.repositories.ui.navigator.RepositoryCategories\=false;org.eclipse.linuxtools.tmf.ui.navigator.content\=false;org.eclipse.ui.navigator.resourceContent\=false;org.eclipse.ui.navigator.resources.workingSets\=true;org.eclipse.team.ui.patchSyncNavigatorContent\=false;org.eclipse.team.ui.resourceContent\=false;org.eclipse.ui.navigator.resources.nested.nestedProjectContentProvider\=false;org.eclipse.mylyn.tasks.ui.navigator.Repositories\=false;
 /instance/org.eclipse.ui.navigator/org.eclipse.ui.navigator.ProjectExplorer.filterActivation=\:org.eclipse.rse.project.filters.RemoteSystemsProjects\:org.eclipse.ui.navigator.resources.filters.startsWithDot\:org.eclipse.cdt.ui.navigator.filters.AnonymousStructFilter\:org.eclipse.mylyn.tasks.ui.navigator.filters.tasks\:org.eclipse.cdt.ui.navigator.filters.ForwardDeclarationFilter\:
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+/instance/org.eclipse.ui.workbench/ACTIVE_HYPERLINK_COLOR=138,201,242
+/instance/org.eclipse.ui.workbench/CONFLICTING_COLOR=240,15,66
+/instance/org.eclipse.ui.workbench/CONTENT_ASSIST_BACKGROUND_COLOR=52,57,61
+/instance/org.eclipse.ui.workbench/CONTENT_ASSIST_FOREGROUND_COLOR=238,238,238
+/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation
+/instance/org.eclipse.ui.workbench/ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.cdt.ui.editors.textfont
+/instance/org.eclipse.ui.workbench/ERROR_COLOR=247,68,117
+/instance/org.eclipse.ui.workbench/HYPERLINK_COLOR=111,197,238
+/instance/org.eclipse.ui.workbench/INCOMING_COLOR=31,179,235
+/instance/org.eclipse.ui.workbench/OUTGOING_COLOR=238,238,238
+/instance/org.eclipse.ui.workbench/RESOLVED_COLOR=108,210,17
 /instance/org.eclipse.ui.workbench/editors=<?xml version\="1.0" encoding\="UTF-8"?>\n<editors>\n<descriptor class\="org.eclipse.cdt.autotools.ui.editors.AutoconfEditor" id\="org.eclipse.cdt.autotools.ui.editor.autoconf" image\="icons/autoconf.gif" internal\="true" label\="Autoconf Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.cdt.autotools.ui"/>\n<descriptor id\="org.eclipse.linuxtools.gcov.editor" image\="icons/toggle.gif" internal\="false" label\="Gcov Editor" launcher\="org.eclipse.linuxtools.internal.gcov.action.OpenGCAction" openMode\="4" open_in_place\="false" plugin\="org.eclipse.linuxtools.gcov.core"/>\n<descriptor class\="org.dadacoalition.yedit.editor.YEdit" id\="org.dadacoalition.yedit.editor.YEdit" internal\="true" label\="YEdit YAML Editor" openMode\="1" open_in_place\="false" plugin\="org.dadacoalition.yedit"/>\n<descriptor class\="org.eclipse.cdt.internal.autotools.ui.editors.automake.AutomakeEditor" id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor" image\="icons/automake.gif" internal\="true" label\="AutomakeEditor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.cdt.autotools.ui"/>\n<descriptor id\="org.eclipse.ui.browser.editorSupport" image\="$nl$/icons/obj16/internal_browser.png" internal\="false" label\="Web Browser" launcher\="org.eclipse.ui.internal.browser.BrowserLauncher" openMode\="4" open_in_place\="false" plugin\="org.eclipse.ui.browser"/>\n<descriptor id\="org.eclipse.linuxtools.gprof.editor.single" image\="icons/toggle.gif" internal\="false" label\="Gprof Editor" launcher\="org.eclipse.linuxtools.internal.gprof.action.OpenGmonAction" openMode\="4" open_in_place\="false" plugin\="org.eclipse.linuxtools.gprof"/>\n<descriptor class\="org.eclipse.linuxtools.internal.systemtap.ui.ide.editors.stp.STPEditor" id\="org.eclipse.linuxtools.internal.systemtap.ui.ide.editors.stp.STPEditor" image\="icons/views/page_obj.gif" internal\="true" label\="SystemTap STP Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.linuxtools.systemtap.ui.ide"/>\n<descriptor class\="org.eclipse.linuxtools.internal.valgrind.ui.editor.SuppressionsEditor" id\="org.eclipse.linuxtools.valgrind.editor.suppEditor" image\="icons/valgrind-supp-icon.png" internal\="true" label\="Suppressions Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.linuxtools.valgrind.ui.editor"/>\n<descriptor class\="org.eclipse.oomph.workingsets.presentation.WorkingSetsEditor" id\="org.eclipse.oomph.workingsets.presentation.WorkingSetsEditorID" image\="icons/full/obj16/WorkingSetsModelFile.gif" internal\="true" label\="Working Sets Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.oomph.workingsets.editor"/>\n<descriptor class\="org.eclipse.linuxtools.rpm.ui.editor.SpecfileEditor" id\="org.eclipse.linuxtools.rpm.ui.editor.SpecfileEditor" image\="icons/rpm.gif" internal\="true" label\="Specfile Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.linuxtools.rpm.ui.editor"/>\n<descriptor class\="org.eclipse.linuxtools.internal.rpm.ui.editor.forms.SpecfileFormEditor" id\="org.eclipse.linuxtools.rpm.ui.editor.forms.SpecfileFormEditor" image\="icons/rpm.gif" internal\="true" label\="Specfile Form Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.linuxtools.rpm.ui.editor"/>\n<descriptor class\="org.eclipse.cdt.internal.ui.editor.CEditor" id\="org.eclipse.cdt.ui.editor.CEditor" image\="icons/obj16/c_file_obj.gif" internal\="true" label\="C/C++ Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.cdt.ui"/>\n<descriptor class\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" id\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" image\="$nl$/icons/xmldoc.gif" internal\="true" label\="XML Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.wst.xml.ui"/>\n<descriptor class\="org.eclipse.linuxtools.internal.changelog.core.editors.ChangeLogEditor" id\="org.eclipse.linuxtools.changelog.core.editor6" image\="icons/file_obj.gif" internal\="true" label\="ChangeLog Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.linuxtools.changelog.core"/>\n<descriptor class\="org.eclipse.oomph.setup.presentation.SetupEditor" id\="org.eclipse.oomph.setup.presentation.SetupEditorID" image\="icons/full/obj16/SetupModelFile.gif" internal\="true" label\="Setup Editor" openMode\="1" open_in_place\="false" plugin\="org.eclipse.oomph.setup.editor"/>\n</editors>
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffAddBackgroundColor=11,121,90
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffAddForegroundColor=216,254,245
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHeadlineBackgroundColor=71,71,71
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHeadlineForegroundColor=242,242,242
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHunkBackgroundColor=53,97,113
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffHunkForegroundColor=233,242,254
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffRemoveBackgroundColor=117,2,36
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.DiffRemoveForegroundColor=255,232,237
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.IgnoredResourceBackgroundColor=42,42,42
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.IgnoredResourceForegroundColor=120,120,120
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.UncommittedChangeBackgroundColor=42,42,42
-/instance/org.eclipse.ui.workbench/org.eclipse.egit.ui.UncommittedChangeForegroundColor=114,157,186
-/instance/org.eclipse.ui.workbench/overriddenByCSS=,org.eclipse.egit.ui.DiffAddBackgroundColor,org.eclipse.egit.ui.DiffAddForegroundColor,org.eclipse.egit.ui.DiffHeadlineBackgroundColor,org.eclipse.egit.ui.DiffHeadlineForegroundColor,org.eclipse.egit.ui.DiffHunkBackgroundColor,org.eclipse.egit.ui.DiffHunkForegroundColor,org.eclipse.egit.ui.DiffRemoveBackgroundColor,org.eclipse.egit.ui.DiffRemoveForegroundColor,org.eclipse.egit.ui.IgnoredResourceBackgroundColor,org.eclipse.egit.ui.IgnoredResourceForegroundColor,org.eclipse.egit.ui.UncommittedChangeBackgroundColor,org.eclipse.egit.ui.UncommittedChangeForegroundColor,
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Monospace|15.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.internal.ui.compare.CMergeViewer=1|Monospace|15.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.buildconsole.ConsoleFont=1|Monospace|14.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/org.eclipse.cdt.ui.editors.textfont=1|Monospace|15.0|0|GTK|1|;
+/instance/org.eclipse.ui.workbench/overriddenByCSS=,ACTIVE_HYPERLINK_COLOR,CONFLICTING_COLOR,CONTENT_ASSIST_BACKGROUND_COLOR,CONTENT_ASSIST_FOREGROUND_COLOR,ERROR_COLOR,HYPERLINK_COLOR,INCOMING_COLOR,OUTGOING_COLOR,RESOLVED_COLOR,
 /instance/org.eclipse.ui.workbench/resourcetypes=<?xml version\="1.0" encoding\="UTF-8"?>\n<editors version\="3.1">\n<info extension\="m4" name\="ltoptions">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="m4" name\="ltdl">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="m4" name\="ltgcc">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="gcno" name\="*">\n<editor id\="org.eclipse.linuxtools.gcov.editor"/>\n<defaultEditor id\="org.eclipse.linuxtools.gcov.editor"/>\n</info>\n<info extension\="yaml" name\="*">\n<editor id\="org.dadacoalition.yedit.editor.YEdit"/>\n</info>\n<info extension\="in" name\="Makefile">\n<editor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n</info>\n<info extension\="html" name\="*">\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\n</info>\n<info extension\="out" name\="gmon">\n<editor id\="org.eclipse.linuxtools.gprof.editor.single"/>\n<defaultEditor id\="org.eclipse.linuxtools.gprof.editor.single"/>\n</info>\n<info extension\="m4" name\="ltsugar">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="sum" name\="gmon">\n<editor id\="org.eclipse.linuxtools.gprof.editor.single"/>\n<defaultEditor id\="org.eclipse.linuxtools.gprof.editor.single"/>\n</info>\n<info extension\="stp" name\="*">\n<editor id\="org.eclipse.linuxtools.internal.systemtap.ui.ide.editors.stp.STPEditor"/>\n<defaultEditor id\="org.eclipse.linuxtools.internal.systemtap.ui.ide.editors.stp.STPEditor"/>\n</info>\n<info extension\="supp" name\="*">\n<editor id\="org.eclipse.linuxtools.valgrind.editor.suppEditor"/>\n</info>\n<info extension\="shtml" name\="*">\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\n</info>\n<info extension\="workingsets" name\="*">\n<editor id\="org.eclipse.oomph.workingsets.presentation.WorkingSetsEditorID"/>\n</info>\n<info extension\="m4" name\="libtool">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="spec" name\="*">\n<editor id\="org.eclipse.linuxtools.rpm.ui.editor.SpecfileEditor"/>\n<editor id\="org.eclipse.linuxtools.rpm.ui.editor.forms.SpecfileFormEditor"/>\n</info>\n<info extension\="tpp" name\="*">\n<editor id\="org.eclipse.cdt.ui.editor.CEditor"/>\n<defaultEditor id\="org.eclipse.cdt.ui.editor.CEditor"/>\n</info>\n<info extension\="m4" name\="acinclude">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="launch" name\="*">\n<editor id\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"/>\n<defaultEditor id\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"/>\n</info>\n<info extension\="spec2" name\="*">\n<editor id\="org.eclipse.linuxtools.rpm.ui.editor.SpecfileEditor"/>\n</info>\n<info extension\="xacro" name\="*">\n<editor id\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"/>\n<defaultEditor id\="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"/>\n</info>\n<info extension\="m4" name\="ltversion">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="am" name\="Makefile">\n<editor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n</info>\n<info extension\="ac" name\="configure">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="am" name\="*">\n<editor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editors.AutomakeEditor"/>\n</info>\n<info extension\="in" name\="configure">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="" name\="ChangeLog">\n<editor id\="org.eclipse.linuxtools.changelog.core.editor6"/>\n<defaultEditor id\="org.eclipse.linuxtools.changelog.core.editor6"/>\n</info>\n<info extension\="setup" name\="*">\n<editor id\="org.eclipse.oomph.setup.presentation.SetupEditorID"/>\n</info>\n<info extension\="yml" name\="*">\n<editor id\="org.dadacoalition.yedit.editor.YEdit"/>\n</info>\n<info extension\="m4" name\="lt~obsolete">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="gcda" name\="*">\n<editor id\="org.eclipse.linuxtools.gcov.editor"/>\n<defaultEditor id\="org.eclipse.linuxtools.gcov.editor"/>\n</info>\n<info extension\="m4" name\="aclocal">\n<editor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n<defaultEditor id\="org.eclipse.cdt.autotools.ui.editor.autoconf"/>\n</info>\n<info extension\="htm" name\="*">\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\n</info>\n</editors>
 /instance/org.eclipse.ui/showIntro=false
 /instance/org.eclipse.wst.sse.ui/content_assist_number_of_computers=2
@@ -571,10 +590,11 @@
 /instance/org.eclipse.wst.xml.ui/tagBorder=\#0080ff | null | false | false | false | false
 /instance/org.eclipse.wst.xml.ui/tagName=\#03a8d8 | null | true | false | false | false
 /instance/org.eclipse.wst.xml.ui/xmlContent=\#D9E8F7 | null | false | false | false | false
-@org.eclipse.cdt.core=6.2.0.201704050430
-@org.eclipse.cdt.debug.core=8.1.0.201704050430
+@org.eclipse.cdt.core=6.2.0.201703062208
+@org.eclipse.cdt.debug.core=8.1.0.201703062208
 @org.eclipse.cdt.mylyn.ui=3.21.0.v20160701-1337
-@org.eclipse.cdt.ui=6.1.0.201704050430
+@org.eclipse.cdt.ui=6.1.0.201703062208
+@org.eclipse.core.net=1.3.0.v20160418-1534
 @org.eclipse.core.resources=3.11.1.v20161107-2032
 @org.eclipse.core.runtime=3.12.0.v20160606-1342
 @org.eclipse.debug.core=3.10.100.v20160419-1720
@@ -582,6 +602,7 @@
 @org.eclipse.e4.ui.css.swt.theme=0.10.100.v20160523-0836
 @org.eclipse.e4.ui.workbench.renderers.swt=0.14.1.v20170117-1415
 @org.eclipse.epp.logging.aeri.ide=2.0.4.v20170307-1435
+@org.eclipse.epp.mpc.ui=1.5.4.v20170222-1941
 @org.eclipse.mylyn.context.core=3.21.0.v20160701-1337
 @org.eclipse.mylyn.monitor.ui=3.21.0.v20160630-1702
 @org.eclipse.mylyn.tasks.ui=3.21.0.v20160913-2131
