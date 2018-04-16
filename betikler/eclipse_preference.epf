@@ -1,4 +1,4 @@
-#Fri Apr 06 12:53:45 EET 2018
+#Mon Apr 16 14:50:28 EET 2018
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=10
@@ -452,10 +452,9 @@
 /instance/org.eclipse.cdt.ui/spelling_locale_initialized=true
 /instance/org.eclipse.cdt.ui/useAnnotationsPrefPage=true
 /instance/org.eclipse.cdt.ui/useQuickDiffPrefPage=true
-/instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /instance/org.eclipse.core.resources/description.autobuilding=false
 /instance/org.eclipse.core.resources/version=1
-/instance/org.eclipse.core.runtime/content-types/org.eclipse.wst.xml.core.xmlsource/file-names=sim.launch,anymal_highlevel_controller.launch,anymal_ice_skate_parameter.urdf.xacro,anymal_ice_skate_macro.urdf.xacro,anymal.urdf.xacro,anymal_adapter_parameters.urdf.xacro,anymal_straight_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_parameter.urdf.xacro,rviz.launch,anymal_shank_parameters.urdf.xacro,arac_base.urdf.xacro,arac.urdf.xacro
+/instance/org.eclipse.core.runtime/content-types/org.eclipse.wst.xml.core.xmlsource/file-names=sim.launch,anymal_highlevel_controller.launch,anymal_ice_skate_parameter.urdf.xacro,anymal_ice_skate_macro.urdf.xacro,anymal.urdf.xacro,anymal_adapter_parameters.urdf.xacro,anymal_straight_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_macro.urdf.xacro,anymal_circular_ice_skate_parameter.urdf.xacro,rviz.launch,anymal_shank_parameters.urdf.xacro,arac_base.urdf.xacro,arac.urdf.xacro,arac_state_estimator.launch,arac_controller_frame.launch,wheel.urdf.xacro,wheel_parameters.urdf.xacro,imu_plugin.gazebo.xacro,arac_base_parameters.urdf.xacro
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.applicationLaunchType=org.eclipse.cdt.dsf.gdb.launch.localCLaunch,debug,;org.eclipse.cdt.cdi.launch.localCLaunch,run,;
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.attachLaunchType=org.eclipse.cdt.dsf.gdb.launch.attachCLaunch,debug,;
 /instance/org.eclipse.debug.core//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.postmortemLaunchType=org.eclipse.cdt.dsf.gdb.launch.coreCLaunch,debug,;
@@ -594,7 +593,6 @@
 @org.eclipse.cdt.debug.core=8.1.0.201703062208
 @org.eclipse.cdt.mylyn.ui=3.21.0.v20160701-1337
 @org.eclipse.cdt.ui=6.1.0.201703062208
-@org.eclipse.core.net=1.3.0.v20160418-1534
 @org.eclipse.core.resources=3.11.1.v20161107-2032
 @org.eclipse.core.runtime=3.12.0.v20160606-1342
 @org.eclipse.debug.core=3.10.100.v20160419-1720
