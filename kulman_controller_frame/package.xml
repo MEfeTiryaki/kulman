@@ -2,7 +2,7 @@
 
 <package format="2">
 
-  <name>kulman</name>
+  <name>kulman_controller_frame</name>
   <version>0.0.1</version>
   <description>None</description>
   <license>Proprietary</license>
@@ -11,15 +11,14 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <depend>kulman_basics</depend>
-  <depend>kulman_controller_frame</depend>
-  <depend>kulman_controller</depend>
-  <depend>kulman_joystick</depend>
-  <depend>kulman_model</depend>
   <depend>kulman_msgs</depend>
-  <depend>kulman_rviz</depend>
-  <depend>kulman_state_estimator</depend>
-  
+
+  <depend>roscpp</depend>
+  <depend>boost</depend>
+  <depend>eigen</depend>
   <depend>param_io</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
 
 </package>

@@ -1,0 +1,17 @@
+controllerGains:
+  Proprotional : [ 1.0 , 1.0 ]
+  Derivative   : [ 1.0 , 1.0 ]
+  Integral     : [ 1.0 , 1.0 ]
+
+estimatorParameters:
+  P : [ 1.0 , 1.0  , 1.0 , 1.0 , 1.0 , 1.0 ]
+  Q : [ 1.0 , 1.0  , 1.0 , 1.0 , 1.0 , 1.0 ]
+  R : [ 1.0 , 1.0  , 1.0 , 1.0 , 1.0 , 1.0 ]
+
+joints :
+  jointNumber : 4
+  jointNames:
+    - LF_WH
+    - RF_WH
+    - LH_WH
+    - RH_WH

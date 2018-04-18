@@ -1,0 +1,4 @@
+subscribers:
+  joystick:
+    topic: /turtle1/cmd_vel
+    queue_size: 10
