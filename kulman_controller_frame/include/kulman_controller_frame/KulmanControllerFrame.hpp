@@ -24,7 +24,7 @@
 
 namespace kuco{
 
-template<typename KulmanModel_,typename Controller_,typename Estimator_,typename Joystick_>
+template<typename KulmanModel_,typename Controller_,typename EstimatorHandler_,typename Joystick_>
 class KulmanControllerFrame
 {
  public:
@@ -76,7 +76,7 @@ protected:
   std::string nodeName_;
   std::string robotName_;
 
-  Estimator_* estimator_;
+  EstimatorHandler_* estimatorHandler_;
   Joystick_* joystickHandler_ ;
   Controller_* controller_ ;
   KulmanModel_* model_;

@@ -2,9 +2,6 @@
 
 #include "kulman_joystick/JoystickHandlerBase.hpp"
 
-// Todo (Efe Tiryaki 16.02.18): State içinde tanımlanan Eigen::Vector lerini ayrı headera alınca bundan
-// kurtul .
-#include "arac_model/State/State.hpp"
 
 
 #include <param_io/get_param.hpp>
@@ -16,10 +13,6 @@ namespace joystick{
 
 using namespace param_io;
 
-//JoystickHandlerBase::JoystickHandlerBase(kuco::State& state)
-//  : state_(state)
-//{
-//}
 template<typename KulmanModel_>
 JoystickHandlerBase<KulmanModel_>::JoystickHandlerBase(KulmanModel_& model)
   : model_(model)

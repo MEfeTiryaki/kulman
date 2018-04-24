@@ -1,7 +1,0 @@
-frame:
-  base:
-    name:                base
-  odometry:
-    name:                odom
-  world:
-    name:                map

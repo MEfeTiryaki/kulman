@@ -37,8 +37,8 @@
 #include <sensor_msgs/Imu.h>
 #include <sensor_msgs/JointState.h>
 
-#include "arac_msgs/KulmanState.h"
-#include "arac_msgs/ActuatorCommands.h"
+#include "kulman_msgs/KulmanState.h"
+#include "kulman_msgs/ActuatorCommands.h"
 
 #include <tf/transform_broadcaster.h>
 
@@ -98,7 +98,7 @@ class KulmanGazeboPlugin : public ModelPlugin
   virtual std::string getUrdfRobotDescription(const std::string& paramName) const;
 
   // Set Commands to be writen in writeSimulation
-  void actuatorCommandsCallback(const arac_msgs::ActuatorCommands& msg);
+  void actuatorCommandsCallback(const kulman_msgs::ActuatorCommands& msg);
 
 
   // Ros node
@@ -136,7 +136,7 @@ class KulmanGazeboPlugin : public ModelPlugin
   int kulmanStatePublisherQueueSize_;
   int jointStatePublisherQueueSize_;
   // Publisher msgs
-  arac_msgs::KulmanState kulmanStateMsg_ ;
+  kulman_msgs::KulmanState kulmanStateMsg_ ;
   sensor_msgs::JointState jointStates_ ;
 
   // Subscriber
@@ -146,7 +146,7 @@ class KulmanGazeboPlugin : public ModelPlugin
   // Subscriber queue_size
   int actuatorCommandSubscriberQueueSize_;
   // Subscriber msgs
-  arac_msgs::ActuatorCommands actuatorCommands_;
+  kulman_msgs::ActuatorCommands actuatorCommands_;
 
 
   // Estimator Bool

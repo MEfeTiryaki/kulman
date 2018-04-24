@@ -20,9 +20,7 @@
  #include <memory>
  #include <mutex>
 
- #include "arac_model/State/State.hpp"
- #include "arac_model/Model/AracModel.hpp"
-
+#include "kulman_model/State/State.hpp"
 namespace joystick {
 
   template<typename KulmanModel_>

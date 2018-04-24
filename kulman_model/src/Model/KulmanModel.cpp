@@ -5,7 +5,7 @@
 */
 
 
-#include "arac_model/Model/KulmanModel.hpp"
+#include "kulman_model/Model/KulmanModel.hpp"
 
 namespace kuco {
 
