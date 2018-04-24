@@ -70,7 +70,7 @@ class StateEstimatorHandlerBase
       getParam(*nodeHandle_, "subscribers/kulman_state/queue_size", kulmanStateSubscriberQueueSize_);
     }
     kulmanStateSubscriberName_ = "/" + robotName_ + kulmanStateSubscriberNameBuffer ;
-
+    std::cout << "[" << robotName_ << " StateEstimatorHandler::readParameters] " << kulmanStateSubscriberName_ << std::endl;
   }
 
 

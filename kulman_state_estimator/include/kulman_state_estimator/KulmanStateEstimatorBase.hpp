@@ -64,11 +64,17 @@ class KulmanStateEstimatorBase
 
   virtual void readParameters()
   {
+    getParam(*nodeHandle_, "robot_name", robotName_);
+    std::string kulmanStatePublisherNameBuffer;
+
     getParam(*nodeHandle_, "subscribers/estimator/topic"     , kulmanDataSubscriberName_);
     getParam(*nodeHandle_, "subscribers/estimator/queue_size", kulmanDataSubscriberQueueSize_);
 
-    getParam(*nodeHandle_, "publishers/kulman_state/topic"     , kulmanStateEstimatorPublisherName_);
+    getParam(*nodeHandle_, "publishers/kulman_state/topic"     , kulmanStatePublisherNameBuffer);
     getParam(*nodeHandle_, "publishers/kulman_state/queue_size", kulmanStateEstimatorPublisherQueueSize_);
+
+    kulmanStateEstimatorPublisherName_ = "/" + robotName_ + kulmanStatePublisherNameBuffer ;
+
   }
 
  protected:
@@ -97,6 +103,7 @@ class KulmanStateEstimatorBase
 
 
   std::string nodeName_;
+  std::string robotName_;
   ros::NodeHandle* nodeHandle_;
   ros::Rate* loop_rate_;
 
