@@ -65,7 +65,7 @@
 /instance/org.eclipse.cdt.core.prj-arac_gazebo-Release@arac_gazebo/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_joystick-Release@arac_joystick/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_model-Release@arac_model/indexer/preferenceScope=0
-/instance/org.eclipse.cdt.core.prj-arac_msgs-Release@arac_msgs/indexer/preferenceScope=0
+/instance/org.eclipse.cdt.core.prj-kulman_msgs-Release@kulman_msgs/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_rviz-Release@arac_rviz/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_sim-Release@arac_sim/indexer/preferenceScope=0
 /instance/org.eclipse.cdt.core.prj-arac_state_estimator-Release@arac_state_estimator/indexer/preferenceScope=0

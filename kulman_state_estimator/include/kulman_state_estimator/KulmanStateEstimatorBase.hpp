@@ -12,10 +12,7 @@
 #include <memory>
 #include <mutex>
 
-#include "arac_model/State/State.hpp"
-#include "arac_model/Model/AracModel.hpp"
-
-#include "arac_msgs/KulmanState.h"
+#include "kulman_msgs/KulmanState.h"
 
 #include <param_io/get_param.hpp>
 
@@ -67,8 +64,17 @@ class KulmanStateEstimatorBase
 
   virtual void readParameters()
   {
-    getParam(*nodeHandle_, "subscribers/estimator/topic", kulmanDataSubscriberName_);
+    getParam(*nodeHandle_, "robot_name", robotName_);
+    std::string kulmanStatePublisherNameBuffer;
+
+    getParam(*nodeHandle_, "subscribers/estimator/topic"     , kulmanDataSubscriberName_);
     getParam(*nodeHandle_, "subscribers/estimator/queue_size", kulmanDataSubscriberQueueSize_);
+
+    getParam(*nodeHandle_, "publishers/kulman_state/topic"     , kulmanStatePublisherNameBuffer);
+    getParam(*nodeHandle_, "publishers/kulman_state/queue_size", kulmanStateEstimatorPublisherQueueSize_);
+
+    kulmanStateEstimatorPublisherName_ = "/" + robotName_ + kulmanStatePublisherNameBuffer ;
+
   }
 
  protected:
@@ -81,14 +87,23 @@ class KulmanStateEstimatorBase
 
   virtual void initilizePublishers()
   {
+    kulmanStateEstimatorPublisher_ = nodeHandle_->advertise<kulman_msgs::KulmanState>(
+        kulmanStateEstimatorPublisherName_, kulmanStateEstimatorPublisherQueueSize_);
   }
 
-  virtual void getStateMsg( arac_msgs::KulmanState msg){
+  virtual void getStateMsg( kulman_msgs::KulmanState msg){
     kulmanStateMsg_ = msg ;
   }
 
+  virtual void publishEstimatedState()
+  {
+    kulmanStateEstimatorPublisher_.publish(kulmanStateEstimatorMsg_);
+  }
+
+
 
   std::string nodeName_;
+  std::string robotName_;
   ros::NodeHandle* nodeHandle_;
   ros::Rate* loop_rate_;
 
@@ -102,7 +117,17 @@ class KulmanStateEstimatorBase
   // Subscriber queue_size
   int kulmanDataSubscriberQueueSize_;
   // Subscriber msgs
-  arac_msgs::KulmanState kulmanStateMsg_;
+  kulman_msgs::KulmanState kulmanStateMsg_;
+
+  // Publisher
+  ros::Publisher kulmanStateEstimatorPublisher_;
+  // Publisher names
+  std::string kulmanStateEstimatorPublisherName_;
+  // Publisher queue_size
+  int kulmanStateEstimatorPublisherQueueSize_;
+  // Publisher msgs
+  kulman_msgs::KulmanState kulmanStateEstimatorMsg_ ;
+
 };
 
 }

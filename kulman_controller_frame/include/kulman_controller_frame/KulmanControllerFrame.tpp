@@ -31,7 +31,7 @@ template<typename KulmanModel_,typename Controller_,typename Estimator_,typename
 void KulmanControllerFrame<KulmanModel_,Controller_,Estimator_,Joystick_>::advance(double dt)
 {
   // Estimator here in future
-  estimator_->advance(dt_);
+  estimatorHandler_->advance(dt_);
 
   // Advance the joystick handler
   joystickHandler_->advance(dt_);
@@ -55,6 +55,8 @@ void KulmanControllerFrame<KulmanModel_,Controller_,Estimator_,Joystick_>::readP
            dt_);
   loopFrequency_ = 1/dt_;
 
+  getParam(*nodeHandle_, "robot_name", robotName_);
+
   // Publisher degiskenleri okundu
   getParam(*nodeHandle_, "publishers/actuator_commands/topic", actuatorCommandPublisherName_);
   getParam(*nodeHandle_, "publishers/actuator_commands/queue_size",
@@ -68,8 +70,9 @@ void KulmanControllerFrame<KulmanModel_,Controller_,Estimator_,Joystick_>::readP
 template<typename KulmanModel_,typename Controller_,typename Estimator_,typename Joystick_>
 void KulmanControllerFrame<KulmanModel_,Controller_,Estimator_,Joystick_>::initilizePublishers()
 {
+  std::string publisherName = "/" + robotName_ + actuatorCommandPublisherName_;
   actuatorCommandPublisher_ = nodeHandle_->advertise<kulman_msgs::ActuatorCommands>(
-      actuatorCommandPublisherName_, actuatorCommandPublisherQueueSize_);
+      publisherName, actuatorCommandPublisherQueueSize_);
 
 }
 

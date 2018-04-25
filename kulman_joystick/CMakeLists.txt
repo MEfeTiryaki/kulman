@@ -5,7 +5,6 @@ add_definitions("-std=c++11")
 
 find_package(catkin REQUIRED
   COMPONENTS
-  arac_model
   param_io
   roscpp
   geometry_msgs
@@ -21,7 +20,6 @@ catkin_package(
   INCLUDE_DIRS
     include
   CATKIN_DEPENDS
-    arac_model
     param_io
     roscpp
     geometry_msgs

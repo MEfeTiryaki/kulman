@@ -10,7 +10,7 @@ aşağıda belirtilmiştir.
 * arac_gazebo
 * arac_joystick
 * arac_model
-* arac_msgs
+* kulman_msgs
 * arac_sim
 * arac_state_estimator
 * arac_rviz

@@ -34,6 +34,9 @@ void KulmanGazeboPlugin::Reset()
 
 void KulmanGazeboPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
 {
+  robotName_  = sdf->GetElement("robot_name")->Get<std::string>();
+  //std::cout<< "GAZEBO PLUGIN : Robot name is "<< robotName << std::endl;
+
   // To ensure that gazebo is not distrubed while loading
   //std::unique_lock<std::recursive_mutex> lock(gazeboMutex_);
 
@@ -47,10 +50,10 @@ void KulmanGazeboPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
   this->model_ = model;
 
   // request the robot_description parameter
-  robotDescriptionUrdfString_ = getUrdfRobotDescription(robotDescriptionParamName_);
+  //robotDescriptionUrdfString_ = getUrdfRobotDescription(robotDescriptionParamName_);
 
   // parse the URDF string into a URDF model structure
-  robotDescriptionUrdfModel_.initString(robotDescriptionUrdfString_);
+  //robotDescriptionUrdfModel_.initString(robotDescriptionUrdfString_);
 
   // initialize joint structure
   initJointStructures();
@@ -79,13 +82,6 @@ void KulmanGazeboPlugin::OnUpdate()
 
 void KulmanGazeboPlugin::readParameters(sdf::ElementPtr sdf)
 {
-
-  robotBaseLink_ = sdf->GetElement("robotBaseLink")->Get<std::string>();
-  robotDescriptionParamName_ = sdf->GetElement("robotDescription")->Get<std::string>();
-  const double statePublisherRate = sdf->GetElement("statePublisherRate")->Get<double>();
-
-  publishingTimeStep_ = (statePublisherRate > 0.0) ? 1.0 / statePublisherRate : 0.0;
-
   // Get Frame parameters
   getParam(*nodeHandle_, "frame/base/name", frameBase_);
   getParam(*nodeHandle_, "frame/odometry/name", frameOdometry_);
@@ -106,7 +102,15 @@ void KulmanGazeboPlugin::readParameters(sdf::ElementPtr sdf)
   // Get Default Positions
   getParam(*nodeHandle_, "joint_states/default_positions", jointPositionsDefault_);
 
-  isEstimatorUsed = false;
+
+  getParam(*nodeHandle_, "state_estimator_used", isEstimatorUsed);
+
+  if (isEstimatorUsed){
+    std::cout << "["<< robotName_ << "Gazebo Plugin] : State estimator is publishing state "<<std::endl;
+  } else {
+    std::cout << "["<< robotName_ << "Gazebo Plugin]  : Plugin is publishing state"<<std::endl;
+  }
+  //isEstimatorUsed = false;
 
 }
 
@@ -149,7 +153,8 @@ void KulmanGazeboPlugin::initJointStructures()
 {
   jointPtrs_ = model_->GetJoints();
 
-  std::cout << "Detected Joints are :" << std::endl;
+  std::cout << "[" << robotName_
+            << "::GazeboPlugin::initJointStructures] "<< "Detected Joints are :" << std::endl;
 
   jointPositionsReset_ = std::vector<double>(jointPtrs_.size());
 
@@ -171,7 +176,8 @@ void KulmanGazeboPlugin::initLinkStructure()
   for (int i = 0; i < links.size(); i++) {
     if (links[i]->GetName().find("base") != std::string::npos) {
       baseLink_ = links[i];
-      std::cout << "Model contain base_link!" << std::endl;
+      std::cout << "[" << robotName_
+                << "::GazeboPlugin::initLinkStructure] "<< "Model contain base_link!" << std::endl;
       return;
     }
   }
@@ -181,13 +187,13 @@ void KulmanGazeboPlugin::initPublishers()
 {
 
   // Robot State Publishers
-  kulmanStatePublisher_ = nodeHandle_->advertise<arac_msgs::KulmanState>(
+  kulmanStatePublisher_ = nodeHandle_->advertise<kulman_msgs::KulmanState>(
       kulmanStatePublisherName_, kulmanStatePublisherQueueSize_);
   jointStatePublisher_ = nodeHandle_->advertise<sensor_msgs::JointState>(
       jointStatePublisherName_, jointStatePublisherQueueSize_);
 
   // Initilized the message
-  kulmanStateMsg_ = arac_msgs::KulmanState();
+  kulmanStateMsg_ = kulman_msgs::KulmanState();
   // kulmanStateMsg_.pose =
   // kulmanStateMsg_.twist =
 
@@ -208,8 +214,8 @@ void KulmanGazeboPlugin::initSubscribers()
 {
 
   // Actuator Command Subscriber
-  const std::string subscriberStr = "/arac_controller_frame/ActuatorCommands";
-  actuatorCommandSubscriber_ = nodeHandle_->subscribe(actuatorCommandSubscriberName_,
+  const std::string subscriberStr = "/"+ robotName_ + actuatorCommandSubscriberName_;
+  actuatorCommandSubscriber_ = nodeHandle_->subscribe(subscriberStr,
                                                       actuatorCommandSubscriberQueueSize_,
                                                       &KulmanGazeboPlugin::actuatorCommandsCallback,
                                                       this);
@@ -222,7 +228,7 @@ void KulmanGazeboPlugin::initSubscribers()
 }
 
 // Todo : Actuator command is a kulman_msgs
-void KulmanGazeboPlugin::actuatorCommandsCallback(const arac_msgs::ActuatorCommands& msg)
+void KulmanGazeboPlugin::actuatorCommandsCallback(const kulman_msgs::ActuatorCommands& msg)
 {
   //std::unique_lock < std::recursive_mutex > lock(gazeboMutex_);
   actuatorCommands_ = msg;

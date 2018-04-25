@@ -5,16 +5,20 @@ add_definitions("-std=c++11")
 
 find_package(catkin REQUIRED
   COMPONENTS
-  param_io
-  arac_msgs
+	  kulman_msgs
+	  roscpp
+   	param_io
+
 )
 
 catkin_package(
   INCLUDE_DIRS
     include
   CATKIN_DEPENDS
+    kulman_msgs
+    roscpp
     param_io
-    arac_msgs
+
 )
 
 #############
